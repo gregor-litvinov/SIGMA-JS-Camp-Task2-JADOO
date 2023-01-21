@@ -1,0 +1,62 @@
+.services {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+    .services-title {
+    text-align: center;
+        .subtitle {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 27px;
+          color: #5E6282;
+          }
+          .title {
+            font-family: 'Volkhov';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 64px;
+            text-transform: capitalize;
+            color: #14183E;
+          }
+
+    }
+
+    .cards {
+          display: flex;
+          justify-content: space-between;
+          gap: 4rem;
+          margin-top: 2rem;
+
+            .card {
+                  height: 12rem;
+                  padding: 3rem 1rem;
+                  display: flex;
+                  align-items: center;
+                  flex-direction: column;
+                  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                  border-radius: 1rem;
+
+                    .icon {
+                            margin-bottom: 1rem;
+                          }
+                    .title {
+                            margin-bottom: 1rem;
+                            font-size: 1.4rem;
+                          }
+
+                       p {
+                            text-align: center;
+                          }
+
+                }
+
+}
+
+
+}

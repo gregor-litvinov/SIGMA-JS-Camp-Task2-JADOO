@@ -1,137 +1,40 @@
-.container {
-  margin: 0 10rem;
-}
+
 
 nav {
   padding: 2rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1160px;
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .links {
+        ul {
+          list-style: none;
+          display: flex;
+
+          li {
+          margin: 0 3rem;
+
+             a {
+                color: #1b2f5a;
+                font-size: 17px;
+                text-decoration: none;
+
+                &.signup {
+                  border-radius: 5px;
+                  border: 1px solid #000;
+                }
+
+              }
+
+          }
+        }
+      }
+
+
 }
 
-nav .nav-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-nav .nav-container .brand {
-  color: #1b2f5a;
-  font-size: 3rem;
-  font-family: "Zen Tokyo Zoo", cursive;
-}
-
-nav .nav-container .responsive-toggle {
-  display: none;
-}
-
-nav .links ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-nav .links ul li {
-  margin: 0 3rem;
-}
-
-nav .links ul li a {
-  color: #1b2f5a;
-  font-size: 1.2rem;
-}
-
-.starter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.starter .content {
-  margin: 4rem 0 0 0;
-}
-
-.starter .content .subTitle {
-  color: #f07167;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.starter .content .title {
-  font-size: 3.3rem;
-  text-transform: capitalize;
-  margin-bottom: 1rem;
-}
-
-.starter .content .title span {
-  background-image: url("assets/Decore Text.png");
-  background-size: 120%;
-  background-repeat: no-repeat;
-  background-position: bottom 5px left 0;
-}
-
-.starter .content .description {
-  font-size: 1.1rem;
-  letter-spacing: 0.15rem;
-  margin-bottom: 1rem;
-}
-
-.starter .content .last {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.starter .content .last .play {
-  margin: 2rem 0 2rem 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.starter .content .last .play button {
-  border-radius: 100%;
-  padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 1rem;
-  background-color: #f94144;
-  -webkit-box-shadow: #f941443d 0px 10px 20px, #f9414449 0px 6px 6px;
-          box-shadow: #f941443d 0px 10px 20px, #f9414449 0px 6px 6px;
-}
-
-.starter .content .last .play button i {
-  font-size: 0.8rem;
-}
-
-.starter .content .last .play span {
-  font-size: 1rem;
-}
-
-.starter .image img {
-  height: 33rem;
-}
 

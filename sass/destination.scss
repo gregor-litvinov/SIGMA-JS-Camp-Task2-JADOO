@@ -1,0 +1,38 @@
+.destination {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.destination .title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.destination .cards {
+
+  display: flex;
+  gap: 4rem;
+}
+
+.destination .cards .image img {
+  height: 18rem;
+  width: 18rem;
+}
+
+.destination .cards .content {
+
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.destination .cards .time {
+  display: flex;
+}
+
+.destination .cards .time i {
+  margin-right: 1rem;
+}

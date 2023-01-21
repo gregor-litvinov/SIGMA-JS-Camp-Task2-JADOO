@@ -1,22 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
-html {
-  scroll-behavior: smooth;
-}
-
-html::-webkit-scrollbar {
-  background-color: transparent;
-  width: 0.6rem;
-}
-
-html::-webkit-scrollbar-thumb {
-  background-color: #f07167;
-}
-
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-image: url("../img/Decore.png");
   background-repeat: no-repeat;
@@ -47,145 +33,195 @@ button {
   border-radius: 0.5rem;
   color: white;
   border: none;
-  background-color: #ff9f1c;
+  background-color: #F1A501;
   font-size: 1.1rem;
 }
 
 .container {
-  margin: 0 10rem;
+  max-width: 1400px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.none {
+  display: none !important;
 }
 
 nav {
   padding: 2rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
+  max-width: 1160px;
 }
-
 nav .nav-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
-
-nav .nav-container .brand {
-  color: #1b2f5a;
-  font-size: 3rem;
-  font-family: "Zen Tokyo Zoo", cursive;
-}
-
-nav .nav-container .responsive-toggle {
-  display: none;
-}
-
 nav .links ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 nav .links ul li {
   margin: 0 3rem;
 }
-
 nav .links ul li a {
   color: #1b2f5a;
-  font-size: 1.2rem;
+  font-size: 17px;
+  text-decoration: none;
+}
+nav .links ul li a.signup {
+  border-radius: 5px;
+  border: 1px solid #000;
 }
 
-.starter {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.start-wrapper {
   display: flex;
+  max-width: 1200px;
+  width: 100%;
 }
-
-.starter .content {
+.start-wrapper .content {
   margin: 4rem 0 0 0;
+  max-width: 545px;
 }
-
-.starter .content .subTitle {
+.start-wrapper .content .subTitle {
   color: #f07167;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-
-.starter .content .title {
-  font-size: 3.3rem;
-  text-transform: capitalize;
-  margin-bottom: 1rem;
+.start-wrapper .content .title {
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 89px;
+  letter-spacing: -0.04em;
+  color: #181E4B;
 }
-
-.starter .content .title span {
-  background-image: url("assets/Decore Text.png");
-  background-size: 120%;
-  background-repeat: no-repeat;
-  background-position: bottom 5px left 0;
+.start-wrapper .content .description p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #5E6282;
 }
-
-.starter .content .description {
-  font-size: 1.1rem;
-  letter-spacing: 0.15rem;
-  margin-bottom: 1rem;
-}
-
-.starter .content .last {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.start-wrapper .content .last {
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
-
-.starter .content .last .play {
+.start-wrapper .content .last .play {
   margin: 2rem 0 2rem 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
-
-.starter .content .last .play button {
+.start-wrapper .content .last .play button {
   border-radius: 100%;
   padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   margin-right: 1rem;
-  background-color: #f94144;
-  -webkit-box-shadow: rgba(249, 65, 68, 0.2392156863) 0px 10px 20px, rgba(249, 65, 68, 0.2862745098) 0px 6px 6px;
-  box-shadow: rgba(249, 65, 68, 0.2392156863) 0px 10px 20px, rgba(249, 65, 68, 0.2862745098) 0px 6px 6px;
+  background-color: #DF6951;
 }
-
-.starter .content .last .play button i {
-  font-size: 0.8rem;
-}
-
-.starter .content .last .play span {
+.start-wrapper .content .last .play span {
   font-size: 1rem;
 }
-
-.starter .image img {
+.start-wrapper .image img {
   height: 33rem;
+}
+
+.services {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.services .services-title {
+  text-align: center;
+}
+.services .services-title .subtitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #5E6282;
+}
+.services .services-title .title {
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  text-transform: capitalize;
+  color: #14183E;
+}
+.services .cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+.services .cards .card {
+  height: 12rem;
+  padding: 3rem 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1rem;
+}
+.services .cards .card .icon {
+  margin-bottom: 1rem;
+}
+.services .cards .card .title {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+.services .cards .card p {
+  text-align: center;
+}
+
+.destination {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.destination .title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.destination .cards {
+  display: flex;
+  gap: 4rem;
+}
+
+.destination .cards .image img {
+  height: 18rem;
+  width: 18rem;
+}
+
+.destination .cards .content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.destination .cards .time {
+  display: flex;
+}
+
+.destination .cards .time i {
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

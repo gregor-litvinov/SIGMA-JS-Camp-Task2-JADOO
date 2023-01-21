@@ -1,23 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
-html {
-  scroll-behavior: smooth;
-}
 
-html::-webkit-scrollbar {
-  background-color: transparent;
-  width: 0.6rem;
-}
-
-html::-webkit-scrollbar-thumb {
-  background-color: #f07167;
-}
 
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-image: url("../img/Decore.png");
   background-repeat: no-repeat;
   background-position: top 0 right 0;
@@ -47,6 +35,19 @@ button {
   border-radius: 0.5rem;
   color: white;
   border: none;
-  background-color: #ff9f1c;
+  background-color: #F1A501;
   font-size: 1.1rem;
+}
+
+.container {
+  max-width: 1400px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.none {
+  display: none !important;
+
 }
