@@ -227,7 +227,7 @@ nav .links ul li a.signup {
 .next-trip {
   margin: 5rem 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 10rem;
 }
 .next-trip .content .next-trip-title .subtitle {
@@ -262,7 +262,6 @@ nav .links ul li a.signup {
 }
 .next-trip .content .steps .step .icon img {
   height: 3rem;
-  border-radius: 10px;
 }
 .next-trip .content .steps .step .text .title {
   font-size: 1.2rem;
@@ -271,7 +270,6 @@ nav .links ul li a.signup {
 .next-trip .content .steps .step .text p {
   width: 70%;
 }
-
 .next-trip .trip {
   display: flex;
   justify-content: center;
@@ -280,21 +278,20 @@ nav .links ul li a.signup {
   border-radius: 2rem;
   padding: 1rem;
 }
-
-.next-trip .trip .title {
+.next-trip .trip .trip-card .title {
   margin: 0.5rem;
 }
-
-.next-trip .trip .subTitle {
+.next-trip .trip .trip-card .subTitle {
   margin: 0 0.5rem;
   color: #4e4e4e;
 }
-
+.next-trip .trip .trip-card .trip-card-foto {
+  border-radius: 2px;
+}
 .next-trip .trip .icons {
   margin: 1rem 0;
   display: flex;
 }
-
 .next-trip .trip .icons .icon {
   margin: 0 0 0 0.5rem;
   background-color: #e0e0e0;
@@ -305,12 +302,65 @@ nav .links ul li a.signup {
   align-items: center;
   border-radius: 3rem;
 }
-
 .next-trip .trip .like {
   display: flex;
   justify-content: space-between;
   margin: 0.5rem 1rem;
   color: #4e4e4e;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 3rem;
+  gap: 10rem;
+}
+.testimonials .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.testimonials .content .title {
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  text-transform: capitalize;
+  color: #14183E;
+}
+.testimonials .content .subTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #5E6282;
+}
+.testimonials .review {
+  position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 9rem;
+  width: 20rem;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+.testimonials .review .review-ikon {
+  position: absolute;
+  left: -24px;
+  top: -24px;
+}
+.testimonials .review p {
+  line-height: 1.4rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+.testimonials .review h3 {
+  margin-bottom: 0.3rem;
+}
+.testimonials .review h4 {
+  font-weight: 100;
 }
 
 /*# sourceMappingURL=style.css.map */

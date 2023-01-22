@@ -1,7 +1,7 @@
 .next-trip {
   margin: 5rem 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 10rem;
 
 
@@ -46,7 +46,6 @@
 
                 img {
                       height: 3rem;
-                      border-radius: 10px;
                     }
               }
               .text {
@@ -68,49 +67,48 @@
 
   }
 
+  .trip {
 
-
-}
-
-
-
-.next-trip .trip {
-  display: flex;
+          display: flex;
           justify-content: center;
           flex-direction: column;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           border-radius: 2rem;
           padding: 1rem;
-}
 
-.next-trip .trip .title {
-  margin: 0.5rem;
-}
+          .trip-card {
 
-.next-trip .trip .subTitle {
-  margin: 0 0.5rem;
-  color: #4e4e4e;
-}
+            .title {
+                    margin: 0.5rem;
+                  }
+            .subTitle {
+                    margin: 0 0.5rem;
+                    color: #4e4e4e;
+                  }
+            .trip-card-foto {
+              border-radius: 2px;
+            }
+          }
+          .icons {
+            margin: 1rem 0;
+            display: flex;
 
-.next-trip .trip .icons {
-  margin: 1rem 0;
-  display: flex;
-}
-
-.next-trip .trip .icons .icon {
-  margin: 0 0 0 0.5rem;
-  background-color: #e0e0e0;
-  height: 2.5rem;
-  width: 2.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 3rem;
-}
-
-.next-trip .trip .like {
-  display: flex;
-  justify-content: space-between;
-  margin: 0.5rem 1rem;
-  color: #4e4e4e;
+            .icon {
+                  margin: 0 0 0 0.5rem;
+                  background-color: #e0e0e0;
+                  height: 2.5rem;
+                  width: 2.5rem;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 3rem;
+                }
+          }
+          .like {
+                display: flex;
+                justify-content: space-between;
+                margin: 0.5rem 1rem;
+                color: #4e4e4e;
+          }
+  }
 }
