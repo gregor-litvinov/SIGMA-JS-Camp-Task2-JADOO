@@ -363,4 +363,14 @@ nav .links ul li a.signup {
   font-weight: 100;
 }
 
+.brands .brands-wrapper {
+  max-width: 1073px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brands .brands-wrapper img {
+  margin: 0 2rem;
+}
+
 /*# sourceMappingURL=style.css.map */
