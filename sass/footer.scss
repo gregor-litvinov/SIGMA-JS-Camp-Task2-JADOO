@@ -1,0 +1,95 @@
+footer {
+  margin: 5rem 0;
+
+    .grid {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+
+          .brand {
+            .logo {
+                  font-family: 'Poppins';
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 44px;
+                  line-height: 66px;
+                  color: #181E4B;
+                  }
+              .subTitle {
+                          width: 80%;
+                        }
+          }
+          .content {
+            .title {
+                  font-size: 1.2rem;
+                  font-weight: bold;
+                }
+                ul {
+                    list-style-type: none;
+
+                    li {
+                        margin: 1rem 0;
+                      }
+                  }
+
+          }
+          .social {
+             display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+            .links {
+                     display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      margin-bottom: 1.4rem;
+
+                      .link {
+                            height: 3rem;
+                            width: 3rem;
+                            margin: 0 1rem;
+                            border-radius: 100%;
+                            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-image: -webkit-gradient(linear, left top, right top, from(#74ebd5), to(#9face6));
+                            background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+
+
+                            i {
+                              font-size: 1.3rem;
+}
+
+                          }
+
+            }
+            .app {
+                  display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+              .title {
+                      margin-bottom: 0.7rem;
+                      font-weight: 500;
+                    }
+              .links {
+  display: flex;
+  gap: 1rem;
+                  img {
+                    border-radius: 17.5px;
+                  }
+}
+            }
+          }
+
+        }
+           span {
+                margin-top: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 0.8rem;
+              }
+
+}
