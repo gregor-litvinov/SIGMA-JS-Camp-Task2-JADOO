@@ -59,3 +59,33 @@
     }
 
 }
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container {
+    margin: 0 2rem;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 1.5rem;
+  }
+  .testimonials .review {
+    width: 10rem;
+    height: min-content;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    margin: 0 4rem;
+  }
+  .testimonials {
+    gap: 2rem;
+    margin: 1.5rem;
+  }
+  .testimonials .review {
+    width: 10rem;
+    height: min-content;
+  }
+
+}

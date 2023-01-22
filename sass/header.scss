@@ -22,13 +22,18 @@ nav {
                 color: #1b2f5a;
                 font-size: 17px;
                 text-decoration: none;
+                font-weight: 400;
 
                 &.signup {
                   border-radius: 5px;
                   border: 1px solid #000;
+                  padding: 5px 10px 5px 10px;
                 }
-
+               &:hover {
+                color: #f1a501
               }
+              }
+
 
           }
         }
@@ -36,5 +41,6 @@ nav {
 
 
 }
+
 
 

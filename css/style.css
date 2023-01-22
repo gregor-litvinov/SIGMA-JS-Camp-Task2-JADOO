@@ -37,6 +37,12 @@ button {
   font-size: 1.1rem;
 }
 
+.button-outline {
+  border-radius: 6px;
+  padding: 10px 20px;
+  border: 1px solid #5e6282;
+}
+
 .container {
   max-width: 1400px;
   padding-left: 15px;
@@ -71,10 +77,15 @@ nav .links ul li a {
   color: #1b2f5a;
   font-size: 17px;
   text-decoration: none;
+  font-weight: 400;
 }
 nav .links ul li a.signup {
   border-radius: 5px;
   border: 1px solid #000;
+  padding: 5px 10px 5px 10px;
+}
+nav .links ul li a:hover {
+  color: #f1a501;
 }
 
 .start-wrapper {
@@ -363,6 +374,33 @@ nav .links ul li a.signup {
   font-weight: 100;
 }
 
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container {
+    margin: 0 2rem;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 1.5rem;
+  }
+  .testimonials .review {
+    width: 10rem;
+    height: min-content;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    margin: 0 4rem;
+  }
+  .testimonials {
+    gap: 2rem;
+    margin: 1.5rem;
+  }
+  .testimonials .review {
+    width: 10rem;
+    height: min-content;
+  }
+}
 .brands .brands-wrapper {
   max-width: 1073px;
   display: flex;
@@ -373,6 +411,30 @@ nav .links ul li a.signup {
   margin: 0 2rem;
 }
 
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container {
+    margin: 0 2rem;
+  }
+  .brands-wrapper {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+  .brands-wrapper img {
+    margin: 1.2rem 0;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    margin: 0 4rem;
+  }
+  .brands-wrapper {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+  .brands-wrapper img {
+    margin: 1.2rem 0;
+  }
+}
 .subscribe {
   height: 25rem;
   display: flex;
@@ -407,14 +469,54 @@ nav .links ul li a.signup {
   padding: 1.1rem 3rem;
 }
 
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container {
+    margin: 0 2rem;
+  }
+  .subscribe .title {
+    font-size: 1rem;
+    width: 80%;
+  }
+  .subscribe .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .subscribe .contact input {
+    width: 12rem;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    margin: 0 4rem;
+  }
+  .container .subscribe .title {
+    font-size: 2rem;
+    width: 80%;
+  }
+  .container .subscribe .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container .subscribe .contact input {
+    width: 12rem;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}
 footer {
   margin: 5rem 0;
 }
-footer .grid {
+footer .footer-wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
-footer .grid .brand .logo {
+footer .footer-wrapper .brand .logo {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -422,32 +524,32 @@ footer .grid .brand .logo {
   line-height: 66px;
   color: #181E4B;
 }
-footer .grid .brand .subTitle {
+footer .footer-wrapper .brand .subTitle {
   width: 80%;
 }
-footer .grid .content .title {
+footer .footer-wrapper .content .title {
   font-size: 1.2rem;
   font-weight: bold;
 }
-footer .grid .content ul {
+footer .footer-wrapper .content ul {
   list-style-type: none;
 }
-footer .grid .content ul li {
+footer .footer-wrapper .content ul li {
   margin: 1rem 0;
 }
-footer .grid .social {
+footer .footer-wrapper .social {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-footer .grid .social .links {
+footer .footer-wrapper .social .links {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.4rem;
 }
-footer .grid .social .links .link {
+footer .footer-wrapper .social .links .link {
   height: 3rem;
   width: 3rem;
   margin: 0 1rem;
@@ -456,27 +558,27 @@ footer .grid .social .links .link {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
+}
+footer .footer-wrapper .social .links .link:hover {
   background-image: -webkit-gradient(linear, left top, right top, from(#74ebd5), to(#9face6));
   background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
 }
-footer .grid .social .links .link i {
-  font-size: 1.3rem;
-}
-footer .grid .social .app {
+footer .footer-wrapper .social .app {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-footer .grid .social .app .title {
+footer .footer-wrapper .social .app .title {
   margin-bottom: 0.7rem;
   font-weight: 500;
 }
-footer .grid .social .app .links {
+footer .footer-wrapper .social .app .links {
   display: flex;
   gap: 1rem;
 }
-footer .grid .social .app .links img {
+footer .footer-wrapper .social .app .links img {
   border-radius: 17.5px;
 }
 footer span {
@@ -485,6 +587,28 @@ footer span {
   justify-content: center;
   align-items: center;
   font-size: 0.8rem;
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  footer .footer-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  footer span {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  footer {
+    font-size: 1.3rem;
+  }
+  footer .footer-wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+  footer span {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

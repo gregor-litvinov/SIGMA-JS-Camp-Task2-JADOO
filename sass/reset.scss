@@ -39,6 +39,14 @@ button {
   font-size: 1.1rem;
 }
 
+.button-outline {
+ border-radius: 6px;
+padding: 10px 20px;
+border: 1px solid #5e6282;
+}
+
+
+
 .container {
   max-width: 1400px;
   padding-left: 15px;

@@ -9,3 +9,30 @@
                       }
                     }
 }
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container {
+    margin: 0 2rem;
+  }
+  .brands-wrapper {
+            flex-direction: column;
+             margin: 2rem 0;
+  }
+  .brands-wrapper img {
+    margin: 1.2rem 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    margin: 0 4rem;
+  }
+  .brands-wrapper {
+            flex-direction: column;
+            margin: 2rem 0;
+  }
+  .brands-wrapper img {
+    margin: 1.2rem 0;
+  }
+
+}

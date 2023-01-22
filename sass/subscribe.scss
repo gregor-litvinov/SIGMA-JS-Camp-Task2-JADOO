@@ -31,3 +31,51 @@
   background-color: #f07167;
   padding: 1.1rem 3rem;
 }
+
+
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container {
+    margin: 0 2rem;
+  }
+
+  .subscribe .title {
+    font-size: 1rem;
+    width: 80%;
+  }
+  .subscribe .contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+  }
+  .subscribe .contact input {
+    width: 12rem;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    margin: 0 4rem;
+
+  .subscribe .title {
+    font-size: 2rem;
+    width: 80%;
+  }
+  .subscribe .contact {
+
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+  }
+  .subscribe .contact input {
+    width: 12rem;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+}
+}
