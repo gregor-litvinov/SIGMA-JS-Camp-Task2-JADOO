@@ -6,6 +6,7 @@
   flex-direction: column;
   background-image: linear-gradient(-225deg, #b6cee86e 0%, #8578f563 100%);
   border-radius: 5rem 1rem 1rem 1rem;
+
 }
 
 .subscribe .title {
@@ -21,6 +22,9 @@
   border-radius: 0.3rem;
   padding: 1.2rem 2rem;
   margin-right: 1rem;
+    //  background-image: url("../img/Rectangle\ 23.svg");
+    // background-repeat: no-repeat;
+    // background-position: 5px 5px;
 }
 
 .subscribe input:focus {
@@ -53,6 +57,7 @@
     width: 12rem;
     margin: 0;
     margin-bottom: 1rem;
+
   }
 }
 

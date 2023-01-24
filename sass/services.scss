@@ -60,3 +60,20 @@
 
 
 }
+
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+
+  .services .cards {
+            flex-direction: column;
+  }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  .services .cards {
+            flex-direction: column;
+  }
+
+}

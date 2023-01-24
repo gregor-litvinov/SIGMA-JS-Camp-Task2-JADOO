@@ -88,6 +88,77 @@ nav .links ul li a:hover {
   color: #f1a501;
 }
 
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container {
+    margin: 0 2rem;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .nav-container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .nav-container .responsive-toggle {
+    display: block;
+  }
+  nav .nav-toggle {
+    height: 4rem !important;
+  }
+  nav .nav-toggle ul {
+    margin-top: 1rem;
+    display: flex !important;
+  }
+  nav .links {
+    height: 0;
+    transition: 0.4s ease-in-out;
+  }
+  nav .links ul {
+    display: none;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    margin: 0 4rem;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .nav-container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .nav-container .responsive-toggle {
+    display: block;
+  }
+  nav .nav-toggle {
+    height: 8rem !important;
+  }
+  nav .nav-toggle ul {
+    display: flex !important;
+  }
+  nav .links {
+    height: 0;
+    transition: 0.4s ease-in-out;
+  }
+  nav .links ul {
+    flex-direction: column;
+    display: none;
+  }
+  nav .links ul li {
+    margin: 0.5rem 0;
+  }
+}
+@media screen and (min-width: 769px) {
+  nav .nav-container .responsive-toggle img {
+    display: none;
+  }
+}
 .start-wrapper {
   display: flex;
   max-width: 1200px;
@@ -145,6 +216,24 @@ nav .links ul li a:hover {
   height: 33rem;
 }
 
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .start {
+    flex-direction: column;
+  }
+  .start .image img {
+    height: 15rem;
+    margin-top: 4rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .start-wrapper {
+    flex-direction: column;
+  }
+  .start-wrapper .image img {
+    height: 40rem;
+    margin-top: 4rem;
+  }
+}
 .services {
   margin: 5rem 0;
   display: flex;
@@ -198,6 +287,16 @@ nav .links ul li a:hover {
   text-align: center;
 }
 
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .services .cards {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .services .cards {
+    flex-direction: column;
+  }
+}
 .destination {
   margin: 5rem 0;
   display: flex;
@@ -235,6 +334,16 @@ nav .links ul li a:hover {
   margin-right: 1rem;
 }
 
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .destination .cards {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .destination .cards {
+    flex-direction: column;
+  }
+}
 .next-trip {
   margin: 5rem 0;
   display: flex;
@@ -320,6 +429,24 @@ nav .links ul li a:hover {
   color: #4e4e4e;
 }
 
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .container {
+    margin: 0 2rem;
+  }
+  .next-trip {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    margin: 0 4rem;
+  }
+  .next-trip {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
 .testimonials {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

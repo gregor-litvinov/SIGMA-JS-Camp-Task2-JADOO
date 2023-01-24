@@ -65,3 +65,27 @@
 }
 
 
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .start {
+            flex-direction: column;
+  }
+  .start .image img {
+    height: 15rem;
+    margin-top: 4rem;
+  }
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .start-wrapper {
+            flex-direction: column;
+  }
+  .start-wrapper .image img {
+    height: 40rem;
+    margin-top: 4rem;
+  }
+
+}
+
+

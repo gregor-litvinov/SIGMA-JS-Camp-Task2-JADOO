@@ -36,3 +36,21 @@
 .destination .cards .time i {
   margin-right: 1rem;
 }
+
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+
+  .destination .cards {
+            flex-direction: column;
+  }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  .destination .cards {
+            flex-direction: column;
+  }
+
+
+}
