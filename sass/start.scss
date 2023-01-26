@@ -1,91 +1,150 @@
-.start-wrapper {
+.start {
+  .content {
+    padding-bottom: 135px;
+  }
+}
 
+.start-wrapper {
   display: flex;
   max-width: 1200px;
   width: 100%;
 
-.content {
-  margin: 4rem 0 0 0;
-  max-width: 545px;
+  .content {
+    margin: 95px 0 0 0;
+    max-width: 545px;
 
-        .subTitle {
-                color: #f07167;
-                font-weight: bold;
-                text-transform: uppercase;
-                margin-bottom: 1rem;
-              }
-        .title {
-              font-family: 'Volkhov';
-              font-style: normal;
-              font-weight: 700;
-              font-size: 84px;
-              line-height: 89px;
-              letter-spacing: -0.04em;
-              color: #181E4B;
-              }
-
-        .description {
-            p {
-              font-family: 'Poppins';
-              font-style: normal;
-              font-weight: 500;
-              font-size: 16px;
-              line-height: 30px;
-              color: #5E6282;
-                }
+    .subTitle {
+      color: #f07167;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 23px;
+      font-size: 20px;
     }
-       .last {
-            display: flex;
-            align-items: center;
+    .title {
+      font-family: "Volkhov";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 84px;
+      line-height: 89px;
+      letter-spacing: -0.04em;
+      color: #181e4b;
+      margin-bottom: 25px;
+    }
 
-              .play {
-              margin: 2rem 0 2rem 2rem;
-              display: flex;
-              align-items: center;
+    .description {
+      margin-bottom: 30px;
+      p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        color: #5e6282;
+      }
+    }
+    .last {
+      display: flex;
+      align-items: center;
 
-                  button {
-                    border-radius: 100%;
-                    padding: 1rem;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-right: 1rem;
-                    background-color: #DF6951;
-                  }
-
-                  span {
-                  font-size: 1rem;
-                  }
-              }
-          }
+      .play {
+        display: flex;
+        align-items: center;
+        margin-left: 26px;
+        button {
+          border-radius: 100%;
+          display: flex;
+          width: 50px;
+          height: 50px;
+          justify-content: center;
+          align-items: center;
+          margin-right: 1rem;
+          background-color: #df6951;
+          background-repeat: no-repeat;
+          background-size: auto;
+          background-position: center;
         }
-        .image img {
-  height: 33rem;
-}
-}
 
+        span {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .image {
+    position: absolute;
+    right: 8%;
+
+    .plane {
+      position: absolute;
+      &.plane1 {
+        left: 18%;
+        top: 6%;
+        &:hover {
+          animation-fill-mode: forwards;
+          animation-iteration-count: 1;
+          animation-duration: 4s;
+          animation-name: fly;
+        }
+      }
+      &.plane2 {
+        right: 0;
+        top: 12%;
+        &:hover {
+          animation-fill-mode: forwards;
+          animation-iteration-count: 1;
+          animation-duration: 4s;
+          animation-name: fly;
+        }
+      }
+    }
+  }
+}
 
 @media screen and (min-width: 360px) and (max-width: 480px) {
+  .plane {
+    display: none;
+  }
   .start {
-            flex-direction: column;
+    flex-direction: column;
   }
   .start .image img {
     height: 15rem;
     margin-top: 4rem;
   }
-
-
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .plane {
+    display: none;
+  }
   .start-wrapper {
-            flex-direction: column;
+    flex-direction: column;
   }
   .start-wrapper .image img {
     height: 40rem;
     margin-top: 4rem;
+    display: none;
   }
-
+  .start-wrapper .content .title {
+    font-size: 35px;
+    line-height: 42px;
+  }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .plane {
+    display: none;
+  }
+  .start-wrapper .image {
+    display: none;
+  }
+}
 
+@keyframes fly {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(1000px, -1000px);
+  }
+}

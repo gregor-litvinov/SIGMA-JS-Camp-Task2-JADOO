@@ -1,11 +1,18 @@
 .next-trip {
-  margin: 5rem 0;
+  margin: 180px 0 118px 0;
   display: flex;
-  justify-content: flex-start;
-  gap: 10rem;
-
-
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  .trip-card-foto-wrapper {
+    border-radius: 16px;
+    border: 1px solid black;
+    overflow: hidden;
+  }
   .content {
+    width: 60%;
+    padding-right: 55px;
+    box-sizing: border-box;
       .next-trip-title {
         .subtitle {
           font-family: 'Poppins';
@@ -14,6 +21,7 @@
           font-size: 18px;
           line-height: 27px;
           color: #5E6282;
+          margin-bottom: 14px;
         }
         .title {
           font-family: 'Volkhov';
@@ -23,7 +31,7 @@
           line-height: 64px;
           text-transform: capitalize;
           color: #14183E;
-          max-width: 511px;
+          margin-bottom: 20px;
 
       }
 
@@ -33,9 +41,8 @@
 
         .step {
             display: flex;
-            justify-content: center;
             align-items: center;
-            margin-bottom: 1rem;
+            margin-bottom: 35px;
             gap: 1rem;
 
 
@@ -43,7 +50,9 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
+                border-radius: 13px;
+                overflow: hidden;
+                margin-top: -10px;
                 img {
                       height: 3rem;
                     }
@@ -52,8 +61,8 @@
 
 
                   .title {
-                         font-size: 1.2rem;
-                        margin: 0.3rem 0;
+                         font-size: 16px;
+                         margin: 4px 0 0px 0;
                   }
                   p {
                          width: 70%;
@@ -68,7 +77,7 @@
   }
 
   .trip {
-
+          position: relative;
           display: flex;
           justify-content: center;
           flex-direction: column;
@@ -102,6 +111,11 @@
                   justify-content: center;
                   align-items: center;
                   border-radius: 3rem;
+                  a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  }
                 }
           }
           .like {
@@ -110,6 +124,95 @@
                 margin: 0.5rem 1rem;
                 color: #4e4e4e;
           }
+  }
+}
+
+.trip-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 18px;
+  position: absolute;
+  bottom: 106px;
+  right: -91px;
+  padding: 30px 20px;
+  background-color: #fff;
+  span {
+    display: block;
+  }
+  .avatar {
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+
+  .title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 124.5%;
+    letter-spacing: -0.035em;
+    color: #84829A;
+    margin-bottom: 5px;
+  }
+
+  .sub-title {
+    margin-bottom: 8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 124.5%;
+    /* or 22px */
+
+    letter-spacing: -0.015em;
+
+    /* black */
+
+    color: #080809;
+
+    .status {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      color: #000;
+      b {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 124.5%;
+  
+        letter-spacing: -0.055em;
+  
+        color: #8A79DF!important;
+      }
+    }
+
+
+  }
+
+
+  .status-bar {
+    position: relative;
+    width: 156px;
+    height: 5px;
+    background: #F5F5F5;
+    border-radius: 30px;
+    &:after {
+      content: '';
+      position: absolute;
+      background: #8A79DF;
+      border-radius: 30px;
+      left: 0;
+      bottom:0;
+      top:0;
+      width: 40%;
+      height: 100%;
+
+    }
   }
 }
 
@@ -125,13 +228,39 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .trip-status {
+    display: none;
+  }
   .container {
-    margin: 0 4rem;
+    margin: 0 2rem;
   }
 
   .next-trip {
             flex-direction: column;
             gap: 2rem;
           }
+          .next-trip .content {
+            padding: 0;
+            width: auto;
+          }
+          .next-trip .content .next-trip-title .title {
+            font-size: 28px;
+            line-height: 41px;
+          }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .trip-status {
+    display: none;;
+  }
+  .next-trip .content .steps .step .icon {
+    width: 85px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .trip-status {
+    display: none;;
+  }
 
 }

@@ -1,9 +1,12 @@
 .brands {
+  margin-bottom: 120px;
    .brands-wrapper {
                       max-width: 1073px;
                       display: flex;
                       justify-content: center;
                       align-items: center;
+                      transition: 0.3s;
+                      margin: 0 2rem;
                   img {
                       margin: 0 2rem;
                       }
@@ -35,4 +38,18 @@
     margin: 1.2rem 0;
   }
 
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .brands .brands-wrapper{
+    margin: 0;
+  }
+  .brands .brands-wrapper img {
+    margin: 0; 
+    width: 100%;
+  }
+
+  .brands .brands-wrapper > div {
+    padding: 12px;
+  }
 }

@@ -5,22 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css"/>
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Volkhov:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Poppins:wght@400;700&family=Volkhov:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>Travel Agency</title>
   </head>
   <body>
-    <div class="scrollToTop"></div>
+  <div class="scrollToTop"></div>
   <header class="header">
      <div class="container">
       <nav class="nav">
         <div class="nav-container">
           <div class="header-logo"><img src="./img/Logo.svg" alt="Logo"></div>
-          <!-- <div class="responsive-toggle"><img src="./img/Google Play.jpg" alt=""></div> -->
             <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-            <span></span>
-             </label>
         </div>
         <div class="links">
           <ul>
@@ -28,9 +31,15 @@
             <li><a href="#">Hotels</a></li>
             <li><a href="#">Flights</a></li>
             <li><a href="#">Bookings</a></li>
-            <li ><a href="#" class="signup">Sign up</a></li>
-            <li><a href="#" class="lang">EN</a><span><img src="./img/Vector 1.svg" alt="vector-down"></span></li>
+            <li><a href="#">Login</a></li>
+            <li class="signup"><a href="#">Sign up</a></li>
+            <li class="lang"><span>EN</span></li>
           </ul>
+        </div>
+        <div class="burger">
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
         </div>
       </nav>
       <section class="start ">
@@ -48,19 +57,21 @@
           <div class="last">
             <button class="btn">Find out more</button>
             <div class="play">
-              <button class="play"><img src="./img/Polygon 1.svg" alt=""></button>
+              <button class="play"></button>
               <span>Play Demo</span>
             </div>
           </div>
         </div>
         <div class="image">
-          <img src="./img/traveller1.png" alt="" />
+          <div class="plane plane1"><img src="./img/plane.png" alt="" /></div>
+          <div class="plane plane2"><img src="./img/plane.png" alt="" /></div>
+          <img src="./img/girl.png" alt="" />
         </div>
       </div>
         </div>
       </section>
         <section class="services ">
-          <div class="conttainer">
+          <div class="container">
             <div class="services-title">
               <p class="subtitle">CATEGORY</p>
               <h2 class="title">We Offer Best Services</h2>
@@ -88,7 +99,7 @@
           </div>
           <div class="card">
             <div class="icon">
-              <img src="./img/Group 49.png" alt="service" />
+              <img src="./img/Group 50.png" alt="service" />
             </div>
             <h3 class="title">Local Events</h3>
             <p>
@@ -97,7 +108,7 @@
           </div>
           <div class="card">
             <div class="icon">
-              <img src="./img/Group 50.png" alt="service-foto" />
+              <img src="./img/Group 49.png" alt="service-foto" />
             </div>
             <h3 class="title">Customization</h3>
             <p>
@@ -112,50 +123,55 @@
       <section class="destination ">
         <p class="subtitle">Top Selling</p>
         <h2 class="title">Top Destinations</h2>
-        <div class="cards">
+        <div class="cards-wrapper">
+                <div class="cards">
           <div class="card">
             <div class="image">
               <img src="./img/destination1.png" alt="" />
             </div>
-            <div class="content">
+            <div class="content-wrapper">
+                          <div class="content">
               <h3>Rome, Italy</h3>
               <h3>$5,42k</h3>
             </div>
             <div class="time">
-              <i class="fas fa-location-arrow"></i>
               <h4>10 Days Trip</h4>
             </div>
-          </div>
-          <div class="card">
-            <div class="image">
-              <img src="./img/destination2.jpg" alt="" />
-            </div>
-            <div class="content">
-              <h3>London, UK</h3>
-              <h3>$4,2k</h3>
-            </div>
-            <div class="time">
-              <i class="fas fa-location-arrow"></i>
-              <h4>12 Days Trip</h4>
             </div>
           </div>
           <div class="card">
             <div class="image">
-              <img src="./img/destination3.png" alt="" />
+              <img src="./img/destination1.png" alt="" />
             </div>
-            <div class="content">
-              <h3>Full Europe</h3>
-              <h3>$15k</h3>
+            <div class="content-wrapper">
+                          <div class="content">
+              <h3>Rome, Italy</h3>
+              <h3>$5,42k</h3>
             </div>
             <div class="time">
-              <i class="fas fa-location-arrow"></i>
-              <h4>28 Days Trip</h4>
+              <h4>10 Days Trip</h4>
+            </div>
+            </div>
+          </div>
+                    <div class="card">
+            <div class="image">
+              <img src="./img/destination1.png" alt="" />
+            </div>
+            <div class="content-wrapper">
+                          <div class="content">
+              <h3>Rome, Italy</h3>
+              <h3>$5,42k</h3>
+            </div>
+            <div class="time">
+              <h4>10 Days Trip</h4>
+            </div>
             </div>
           </div>
         </div>
+        </div>
       </section>
 
-      <section class="next-trip" >
+      <section class="next-trip container">
         <div class="content">
           <div class="next-trip-title">
              <p class="subtitle">Easy and Fast</p>
@@ -195,22 +211,36 @@
             </div>
           </div>
         </div>
-        <div class="trip">
+                <div class="trip">
           <div class="trip-card">
-            <img class="trip-card-foto" src="./img/Rectangle 17.jpg" alt="" />
+              <img class="trip-card-foto" src="./img/Rectangle 17.jpeg" alt="" />
             <h3 class="title">Trip to Greece</h3>
             <p class="subTitle">14-29 June | by Kishan Sheth</p>
           </div>
-
+          <div class="trip-status">
+            <img src="./img/image 32.jpg" class="avatar" />
+            <div class="status-content">
+              <span class="title">Ongoing</span>
+              <span class="sub-title">Trip to Rome</span>
+              <span class="status"><b>40%<b>  completed</span>
+              <div class="status-bar"></div>
+            </div>
+          </div>
           <div class="icons">
             <div class="icon">
-              <a href="./img/LEAF.svg"></a>
+              <a href="#">
+                <img src="./img/LEAF.svg">
+              </a>
             </div>
             <div class="icon">
-              <i class="fas fa-map"></i>
+              <a href="#">
+                <img src="./img/map 1.svg">
+              </a>
             </div>
             <div class="icon">
-             <a href="./img/send.svg"></a>
+              <a href="#">
+                <img src="./img/send 2.svg">
+              </a>
             </div>
           </div>
           <div class="like">
@@ -223,7 +253,7 @@
         </div>
       </section>
 
-      <section class="testimonials">
+                                         <section class="testimonials">
         <div class="content">
           <p class="subTitle">Testimonails</p>
           <h2 class="title">What People Say About Us.</h2>
@@ -237,27 +267,23 @@
           <h4 class="location">Lahore, Pakistan</h4>
         </div>
       </section>
-
       <section class="brands">
         <div class="container">
           <div class="brands-wrapper">
-            <img src="./img/logo1.png" alt="" />
-            <img src="./img/logo2.png" alt="" />
-            <img src="./img/logo3.png" alt="" />
-            <img src="./img/logo4.png" alt="" />
-            <img src="./img/logo5.png" alt="" />
+            <div><img src="./img/logo1.png" alt="" /></div>
+            <div><img src="./img/logo2.png" alt="" /></div>
+            <div><img src="./img/logo3.png" alt="" /></div>
+            <div><img src="./img/logo4.png" alt="" /></div>
+            <div><img src="./img/logo5.png" alt="" /></div>
           </div>
         </div>
-
       </section>
-
       <section class="subscribe">
         <h2 class="title">
           Subscribe to get information, latest news and other interesting offers about Cobham
         </h2>
         <div class="contact">
-
-          <input type="text" placeholder="Your email" />
+          <div><input type="text" placeholder="Your email" /></div>
           <button>Subscribe</button>
         </div>
       </section>
@@ -274,9 +300,9 @@
             <div class="title">Company</div>
             <div class="links">
               <ul>
-                <li>About</li>
-                <li>Careers</li>
-                <li>Mobile</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Mobile</a></li>
               </ul>
             </div>
           </div>
@@ -284,9 +310,9 @@
             <div class="title">Contact</div>
             <div class="links">
               <ul>
-                <li>Help/FAQ</li>
-                <li>Press</li>
-                <li>Affilates</li>
+                <li><a href="#">Help/FAQ</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Affilates</a></li>
               </ul>
             </div>
           </div>
@@ -294,37 +320,22 @@
             <div class="title">More</div>
             <div class="links">
               <ul>
-                <li>Airline Fees</li>
-                <li>Airline</li>
-                <li>Low Fare Trips</li>
+                <li><a href="#">Airline Fees</a></li>
+                <li><a href="#">Airline</a></li>
+                <li><a href="#">Low Fare Trips</a></li>
               </ul>
             </div>
           </div>
           <div class="social">
             <div class="links">
               <div class="link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M6.10837 2.24446C5.78831 2.14321 5.42023 2.0757 5.08417 2.0757C4.66809 2.0757 3.77191 2.36259 3.77191 2.91948V4.25266H5.90033V6.49712H3.77191V12.6905H1.6275V6.49712H0.571289V4.25266H1.6275V3.12199C1.6275 1.41755 2.36364 0 4.13999 0C4.7481 0 5.83632 0.0337513 6.42843 0.253134L6.10837 2.24446Z" fill="#080809"/>
-</svg>
+                <img src="./img/fb.png" />
               </div>
               <div class="link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-<g clip-path="url(#clip0_1_511)">
-<path d="M13.6562 0H2.34375C1.05156 0 0 1.05156 0 2.34375V13.6562C0 14.9487 1.05156 16 2.34375 16H13.6562C14.9487 16 16 14.9487 16 13.6562V2.34375C16 1.05156 14.9487 0 13.6562 0ZM15.0625 13.6562C15.0625 14.4316 14.4316 15.0625 13.6562 15.0625H2.34375C1.56844 15.0625 0.9375 14.4316 0.9375 13.6562V2.34375C0.9375 1.56844 1.56844 0.9375 2.34375 0.9375H13.6562C14.4316 0.9375 15.0625 1.56844 15.0625 2.34375V13.6562Z" fill="white"/>
-<path d="M13.1562 1.90625C12.6394 1.90625 12.2188 2.32687 12.2188 2.84375C12.2188 3.36063 12.6394 3.78125 13.1562 3.78125C13.6731 3.78125 14.0938 3.36063 14.0938 2.84375C14.0938 2.32687 13.6731 1.90625 13.1562 1.90625Z" fill="white"/>
-<path d="M8 3.78125C5.67375 3.78125 3.78125 5.67375 3.78125 8C3.78125 10.3263 5.67375 12.2188 8 12.2188C10.3263 12.2188 12.2188 10.3263 12.2188 8C12.2188 5.67375 10.3263 3.78125 8 3.78125ZM8 11.2812C6.19062 11.2812 4.71875 9.80937 4.71875 8C4.71875 6.19062 6.19062 4.71875 8 4.71875C9.80937 4.71875 11.2812 6.19062 11.2812 8C11.2812 9.80937 9.80937 11.2812 8 11.2812Z" fill="white"/>
-</g>
-<defs>
-<clipPath id="clip0_1_511">
-<rect width="16" height="16" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+                <img src="./img/inst.png" />
               </div>
               <div class="link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" fill="none">
-<path d="M16 1.539C15.405 1.8 14.771 1.973 14.11 2.057C14.79 1.651 15.309 1.013 15.553 0.244C14.919 0.622 14.219 0.889 13.473 1.038C12.871 0.397 12.013 0 11.077 0C9.261 0 7.799 1.474 7.799 3.281C7.799 3.541 7.821 3.791 7.875 4.029C5.148 3.896 2.735 2.589 1.114 0.598C0.831 1.089 0.665 1.651 0.665 2.256C0.665 3.392 1.25 4.399 2.122 4.982C1.595 4.972 1.078 4.819 0.64 4.578C0.64 4.588 0.64 4.601 0.64 4.614C0.64 6.208 1.777 7.532 3.268 7.837C3.001 7.91 2.71 7.945 2.408 7.945C2.198 7.945 1.986 7.933 1.787 7.889C2.212 9.188 3.418 10.143 4.852 10.174C3.736 11.047 2.319 11.573 0.785 11.573C0.516 11.573 0.258 11.561 0 11.528C1.453 12.465 3.175 13 5.032 13C11.068 13 14.368 8 14.368 3.666C14.368 3.521 14.363 3.381 14.356 3.242C15.007 2.78 15.554 2.203 16 1.539Z" fill="#080809"/>
-</svg>
+                <img src="./img/tw.png" />
               </div>
             </div>
             <div class="app">
@@ -337,13 +348,7 @@
           </div>
         </div>
         <span>All rights reserved @Jadoo.co</span>
-      </footer> -->
-
+      </footer>
   </header>
-  <main>
-
-  </main>
-   <!-- <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="script.js"></script> --> -->
   </body>
 </html>

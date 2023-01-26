@@ -1,5 +1,5 @@
 footer {
-  margin: 5rem 0;
+  margin: 6rem 0;
 
     .footer-wrapper {
           display: grid;
@@ -7,26 +7,48 @@ footer {
 
           .brand {
             .logo {
-                  font-family: 'Poppins';
-                  font-style: normal;
-                  font-weight: 500;
-                  font-size: 44px;
-                  line-height: 66px;
-                  color: #181E4B;
+              font-family: 'Poppins';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 44px;
+              line-height: 66px;
+              color: #181E4B;
                   }
             .subTitle {
-                          width: 80%;
+                        width: 80%;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 124.5%;
+                        color: #5E6282;
                       }
                   }
            .content {
             .title {
-                  font-size: 1.2rem;
-                  font-weight: bold;
+              font-family: 'Poppins';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 21px;
+              line-height: 124.5%;
+              color: #080809;
                 }
             ul {
                 list-style-type: none;
             li {
                 margin: 1rem 0;
+                a {
+                  font-family: 'Poppins';
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 18px;
+/* or 22px */
+
+
+/* TEXT CLR */
+
+color: #5E6282;
+                }
                 }
               }
                   }
@@ -42,21 +64,9 @@ footer {
                       margin-bottom: 1.4rem;
 
                       .link {
-                            height: 3rem;
-                            width: 3rem;
-                            margin: 0 1rem;
-                            border-radius: 100%;
-                            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            background-color: #fff;
-                            //
-                            &:hover {
-
-                              background-image: -webkit-gradient(linear, left top, right top, from(#74ebd5), to(#9face6));
-                              background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
-                            }
                           }
             }
             .app {
@@ -93,6 +103,9 @@ footer {
   footer .footer-wrapper{
         grid-template-columns: 1fr;
     gap: 2rem;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
   }
   footer span {
     font-size: 1rem;
@@ -104,11 +117,45 @@ footer {
     font-size: 1.3rem;
   }
   footer .footer-wrapper {
-        grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   footer span {
     font-size: 2rem;
   }
+  .container .subscribe .contact input {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+}
 
+footer .footer-wrapper .brand .logo {
+  text-align: center;
+}
+
+footer .footer-wrapper .brand .subTitle {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.content {
+  text-align: center;
+  margin-bottom: 15px;
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  footer .footer-wrapper .brand .logo {
+    font-size: 29px;
+  }
+
+  footer .footer-wrapper .content .title {
+    font-size: 17px;
+  }
+
+  footer .footer-wrapper .content ul li a {
+    font-size: 15px;
+    line-height: 15px;
+  }
 }

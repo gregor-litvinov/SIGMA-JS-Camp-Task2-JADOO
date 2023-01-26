@@ -1,36 +1,20 @@
 
 
-nav {
-  padding: 2rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1160px;
-      .nav-container {
-        display: flex;
-        justify-content: space-between;
-
-
-
-
-
-          /* скрываем чекбокс */
-#menu__toggle {
-  opacity: 0;
-}
-/* стилизуем кнопку */
-.menu__btn {
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center;  /* центрируем содержимое кнопки */
-  position: fixed;
+.burger {
+  position: absolute;
+  right: 20px;
   top: 20px;
-  left: 20px;
+}
+
+.menu__btn {
+  display: flex; 
+  align-items: center; 
   width: 26px;
   height: 26px;
   cursor: pointer;
   z-index: 1;
 }
-/* добавляем "гамбургер" */
+
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -49,6 +33,26 @@ nav {
   top: 8px;
 }
 
+nav {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+
+
+
+
+
+          /* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+
+
+
 
 
 ////////////
@@ -62,30 +66,45 @@ nav {
         ul {
           list-style: none;
           display: flex;
-
+          align-items: center;
           li {
-          margin: 0 3rem;
+            margin: 0 58px 0 0;
 
              a {
                 color: #1b2f5a;
                 font-size: 17px;
                 text-decoration: none;
                 font-weight: 400;
-
-                &.signup {
+                display: block;
+               &:hover {
+                transition: 0.3s;
+                transform: scale(1.2);
+                color: #000000;
+                }
+              }
+              &.signup {
+                margin-right: 43px;
+                a {
                   border-radius: 5px;
                   border: 1px solid #000;
-                  padding: 5px 10px 5px 10px;
+                  padding: 6px 18px 6px 18px;
                 }
-               &:hover {
-                transition: 0.3;
-                font-size: 22px;
-
 
               }
+              &.lang {
+                position: relative;
+                padding-right: 19px;
+                &:after {
+                  content: '';
+                  position: absolute;
+                  right: 0px;
+                  top: 10px;
+                  width: 10px;
+                  height: 6px;
+                  background-image: url('../img/Vector 1.svg');
+                  background-repeat: no-repeat;
+                }
               }
-
-
           }
         }
       }
@@ -169,8 +188,16 @@ nav {
       // visibility: hidden;
        display: none;
    }
-   nav .nav-container .menu__btn {
+   .menu__btn {
       display: none;
    }
   }
 
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    nav .links ul li {
+        margin: 0 30px 0 0;
+        a {
+          font-size: 13px;
+        }
+    }
+  }

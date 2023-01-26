@@ -2,14 +2,17 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 3rem;
-  gap: 10rem;
-
+  gap: 1rem;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 170px;
     .content {
               display: flex;
               justify-content: center;
               flex-direction: column;
-
-
+              justify-content: start;
+              padding-top: 37px;
               .title {
                       font-family: 'Volkhov';
                       font-style: normal;
@@ -29,6 +32,7 @@
                       line-height: 27px;
                       text-transform: uppercase;
                       color: #5E6282;
+                      margin-bottom: 10px;
                     }
               }
 
@@ -39,7 +43,7 @@
       width: 20rem;
       border-radius: 2rem;
       padding: 3rem;
-
+      margin-top: 52px;
       .review-ikon {
                     position: absolute;
                     left: -24px;
@@ -80,12 +84,16 @@
     margin: 0 4rem;
   }
   .testimonials {
-    gap: 2rem;
-    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .testimonials .review {
     width: 10rem;
     height: min-content;
   }
-
+  .testimonials .content .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
