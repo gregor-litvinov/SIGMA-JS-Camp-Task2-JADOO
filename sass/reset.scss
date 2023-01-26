@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
 
-
 body {
   margin: 0;
   padding: 0;
@@ -35,17 +34,15 @@ button {
   border-radius: 0.5rem;
   color: white;
   border: none;
-  background-color: #F1A501;
+  background-color: #f1a501;
   font-size: 1.1rem;
 }
 
 .button-outline {
- border-radius: 6px;
-padding: 10px 20px;
-border: 1px solid #5e6282;
+  border-radius: 6px;
+  padding: 10px 20px;
+  border: 1px solid #5e6282;
 }
-
-
 
 .container {
   max-width: 1200px;
@@ -57,5 +54,4 @@ border: 1px solid #5e6282;
 
 .none {
   display: none !important;
-
 }

@@ -1,16 +1,16 @@
 .brands {
   margin-bottom: 120px;
-   .brands-wrapper {
-                      max-width: 1073px;
-                      display: flex;
-                      justify-content: center;
-                      align-items: center;
-                      transition: 0.3s;
-                      margin: 0 2rem;
-                  img {
-                      margin: 0 2rem;
-                      }
-                    }
+  .brands-wrapper {
+    max-width: 1073px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    margin: 0 2rem;
+    img {
+      margin: 0 2rem;
+    }
+  }
 }
 
 @media screen and (min-width: 360px) and (max-width: 480px) {
@@ -18,8 +18,8 @@
     margin: 0 2rem;
   }
   .brands-wrapper {
-            flex-direction: column;
-             margin: 2rem 0;
+    flex-direction: column;
+    margin: 2rem 0;
   }
   .brands-wrapper img {
     margin: 1.2rem 0;
@@ -31,21 +31,20 @@
     margin: 0 4rem;
   }
   .brands-wrapper {
-            flex-direction: column;
-            margin: 2rem 0;
+    flex-direction: column;
+    margin: 2rem 0;
   }
   .brands-wrapper img {
     margin: 1.2rem 0;
   }
-
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .brands .brands-wrapper{
+  .brands .brands-wrapper {
     margin: 0;
   }
   .brands .brands-wrapper img {
-    margin: 0; 
+    margin: 0;
     width: 100%;
   }
 

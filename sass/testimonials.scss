@@ -7,61 +7,58 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 170px;
-    .content {
-              display: flex;
-              justify-content: center;
-              flex-direction: column;
-              justify-content: start;
-              padding-top: 37px;
-              .title {
-                      font-family: 'Volkhov';
-                      font-style: normal;
-                      font-weight: 700;
-                      font-size: 50px;
-                      line-height: 64px;
-                      text-transform: capitalize;
-                      color: #14183E;
-
-
-                    }
-              .subTitle {
-                      font-family: 'Poppins';
-                      font-style: normal;
-                      font-weight: 600;
-                      font-size: 18px;
-                      line-height: 27px;
-                      text-transform: uppercase;
-                      color: #5E6282;
-                      margin-bottom: 10px;
-                    }
-              }
-
-    .review {
-      position: relative;
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-      height: 9rem;
-      width: 20rem;
-      border-radius: 2rem;
-      padding: 3rem;
-      margin-top: 52px;
-      .review-ikon {
-                    position: absolute;
-                    left: -24px;
-                    top: -24px;
-      }
-        p {
-            line-height: 1.4rem;
-            letter-spacing: 0.1rem;
-            margin-bottom: 1rem;
-          }
-          h3 {
-              margin-bottom: 0.3rem;
-            }
-            h4 {
-              font-weight: 100;
-}
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 37px;
+    .title {
+      font-family: "Volkhov";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 64px;
+      text-transform: capitalize;
+      color: #14183e;
     }
+    .subTitle {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      text-transform: uppercase;
+      color: #5e6282;
+      margin-bottom: 10px;
+    }
+  }
 
+  .review {
+    position: relative;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 9rem;
+    width: 20rem;
+    border-radius: 2rem;
+    padding: 3rem;
+    margin-top: 52px;
+    .review-ikon {
+      position: absolute;
+      left: -24px;
+      top: -24px;
+    }
+    p {
+      line-height: 1.4rem;
+      letter-spacing: 0.1rem;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      margin-bottom: 0.3rem;
+    }
+    h4 {
+      font-weight: 100;
+    }
+  }
 }
 
 @media screen and (min-width: 360px) and (max-width: 480px) {
